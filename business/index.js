@@ -28,15 +28,12 @@ const posts = [
         "published": "04-Jan-2024",
         "updated": "04-Jan-2024"
     }
-];
+]
 
 
 let text = "";
 for (let x of posts) {
-    text += "<a href = " + x[url] + "><h3>" + x["title"] + "</h3></a>";
-    text += "<p>" + x["summary"] + "</p>";
-    text += "<b>" + x["author"] + " | " + x["published"] + "</b>";
-    text += "<hr/>";
+    text += "<hr/><a href = " + x[url] + "><h3>" + x["title"] + "</h3></a><p>" + x["summary"] + "</p><b>" + x["author"] + " | " + x["published"] + "</b>";
 }
 const bloglist = document.querySelector("#main");
 bloglist.innerHTML = text;
