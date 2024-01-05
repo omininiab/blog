@@ -28,7 +28,7 @@ const posts = [
         "published": "04-Jan-2024",
         "updated": "04-Jan-2024"
     }
-]
+];
 
 
 let text = "";
@@ -38,5 +38,5 @@ for (let x of posts) {
     text += "<b>" + x["author"] + " | " + x["published"] + "</b>";
     text += "<hr/>";
 }
-const bloglist = document.querySelector("#main")
-bloglist.innerHTML = text
+const bloglist = document.querySelector("#main");
+bloglist.innerHTML = text;
