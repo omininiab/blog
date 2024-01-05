@@ -32,9 +32,8 @@ const posts = [
 
 
 let text = "";
-console.log("Script loaded.");
 for (let x of posts) {
-    text += "<hr/><a href = \"" + x[url] + "\"><h3>" + x["title"] + "</h3></a><p>" + x["summary"] + "</p><b>by: " + x["author"] + " | " + x["published"] + "</b>";
+    text += "<hr/>" + "<a href = '" + x["url"] + "'>" + "<h3>" + x["title"] + "</h3></a>" + "<p>" + x["summary"] + "</p><b>by: " + x["author"] + " | " + x["published"] + "</b>"
 }
 const bloglist = document.querySelector("#main");
 bloglist.innerHTML = text;
